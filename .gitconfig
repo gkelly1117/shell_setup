@@ -1,0 +1,12 @@
+[user]
+	name = Noah Sugarman
+	email = zetalmac@gmail.com
+[alias]	
+	cm = commit
+	co = checkout
+	br = break
+	cp = cherry-pick
+	di = diff
+	st = status
+	ft = fetch
+	pl = pull
