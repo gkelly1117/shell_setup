@@ -1,11 +1,14 @@
 Shell setup for emacs, bash and git
 
+
 Usage:
-- navigate into the /src folder and type "make install"
+
+- navigate into the /src folder and type "make install" (a backup is created in ~/.shell_setup_backup)
 - copy your local files to the repository by typing "make upload"
 
 ------------------------------------------------------------------
 
 Emacs setup includes:
+
 - pabbrev auto-completion
 - shortcuts for refreshing a file, opening a shell within emacs, deleting a line and many more
