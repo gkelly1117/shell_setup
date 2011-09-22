@@ -9,7 +9,14 @@ alias c="clear"
 bind "C-p":history-search-backward
 bind "C-n":history-search-forward
 
-export PS1="\[\e]2;\u@\H\a\e[32;1m\]\w\[\e[0m\] "
+case $TERM in
+  xterm)
+    export PS1="\[\e]2;\u@\H\a\e[32;1m\]\w\[\e[0m\] "
+    ;;
+  *)
+    export PS1='\W\$ '
+    ;;
+esac
 
 function cd() {
     builtin cd "$1"

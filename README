@@ -1,0 +1,11 @@
+Shell setup for emacs, bash and git
+
+Usage:
+- navigate into the /src folder and type "make install"
+- copy your local files to the repository by typing "make upload"
+
+------------------------------------------------------------------
+
+Emacs setup includes:
+- pabbrev auto-completion
+- shortcuts for refreshing a file, opening a shell within emacs, deleting a line and many more
