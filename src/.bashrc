@@ -1,5 +1,5 @@
 alias g="git"
-alias e="emacs"
+alias e="emacs -nw"
 alias ..="cd .."
 alias ~="cd ~"
 alias la="ls -A"
