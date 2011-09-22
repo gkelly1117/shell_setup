@@ -3,7 +3,7 @@
 	email = zetalmac@gmail.com
 [alias]
 	cm = commit
-	cq = commit -am
+	ca = commit -am
 	co = checkout
 	br = break
 	cp = cherry-pick

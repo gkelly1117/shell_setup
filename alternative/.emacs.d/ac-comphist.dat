@@ -1,0 +1,52 @@
+((("export" .
+   [1 0 0 0 0 0])
+  ("BitmapFilterQuality" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Bitmap" .
+   [2 0 0 0 0 3])
+  ("message" .
+   [1 0 0 0 0 0 0])
+  ("print" .
+   [0 0 0 0 1])
+  ("int" .
+   [1 0 0])
+  ("for" .
+   [0 0 1])
+  ("hey" .
+   [5 0 5])
+  ("String" .
+   [0 0 0 1 0 4])
+  ("actionscript-mode" .
+   [0 0 0 0 0 0 3 0 0 0 0 0 0 0 1 2 0])
+  ("refresh-file" .
+   [0 0 0 0 0 1 0 0 0 0 0 0])
+  ("append" .
+   [1 0 0 0 0 0])
+  ("auto-mode-alist" .
+   [0 0 0 0 0 0 0 0 0 2 0 0 0 0 0])
+  ("setq" .
+   [1 0 0 1])
+  ("assoc" .
+   [1 0 0 0 0])
+  ("ansi-color-for-comint-mode-on" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("ac-dictionary-directories" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("auto-complete" .
+   [3 0 0 0 0 0 0 0 0 0 0 0 2])
+  ("auto-complete-actionscript" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 3 1 0 0 1 0 0 0 0 0 3])
+  ("require" .
+   [3 0 0 0 0 0 0])
+  ("actionscript-mode-hook" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0])
+  ("ecmascript-mode" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("global-font-lock-mode-cmhh" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("backward-kill-line" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("acti" .
+   [0 0 0 1])
+  ("ActionScript" .
+   [0 0 0 0 0 0 0 0 1 1 0 0])))

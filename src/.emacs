@@ -8,8 +8,8 @@
 (global-set-key "\M-k" "\C-a\C-k\C-h\C-n\C-a")
 (global-set-key "\C-x\C-b" "\C-xb")
 (global-set-key "\C-x\M-b" 'buffer-menu)
-(global-set-key "\M-p" "\M-5\C-p\M-5\M-v")
-(global-set-key "\M-n" "\M-5\C-n\M-5\C-v")
+(global-set-key "\M-p" "\M-5\C-p")
+(global-set-key "\M-n" "\M-5\C-n")
 (global-set-key "\C-xp" "\M--\C-xo")
 (global-set-key "\C-x\C-p" "\C-xp")
 (global-set-key "\C-x\C-o" "\C-xo")
@@ -19,6 +19,7 @@
 ; add pabbrev
 (require 'pabbrev "~/.emacs.d/pabbrev.el")
 (global-pabbrev-mode)
+(pabbrev-shut-up)
 
 ; refresh file
 (defun refresh-file ()
