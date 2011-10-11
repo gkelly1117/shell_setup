@@ -1400,7 +1400,7 @@ See `pabbrev-long-idle-timer'.")
   (setq pabbrev-long-idle-timer
         (run-with-idle-timer 1 t 'pabbrev-idle-timer-function))
   (setq pabbrev-short-idle-timer
-        (run-with-idle-timer .5 t 'pabbrev-short-idle-timer)))
+        (run-with-idle-timer 0 t 'pabbrev-short-idle-timer)))
 
 ;;(setq  pabbrev-disable-timers t)
 (defvar pabbrev-disable-timers nil)
