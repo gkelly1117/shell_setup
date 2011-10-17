@@ -10,11 +10,11 @@ bind "C-p":history-search-backward
 bind "C-n":history-search-forward
 
 case $TERM in
-  xterm)
-    export PS1="\[\e]2;\u@\H\a\e[32;1m\]\w\[\e[0m\] "
+  dumb)
+    export PS1='\W\$ '
     ;;
   *)
-    export PS1='\W\$ '
+    export PS1="\[\e]2;\u@\H\a\e[32;1m\]\w\[\e[0m\] "
     ;;
 esac
 
