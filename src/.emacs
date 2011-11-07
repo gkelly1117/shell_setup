@@ -16,6 +16,10 @@
 (global-set-key "\C-\M-w" "\C-a\C-k\C-y")
 (global-set-key "\C-x\C-k" "\C-xk")
 
+; syntax highlighting hooks
+(setq auto-mode-alist (cons '("README" . text-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.sqc$" . c-mode) auto-mode-alist))
+
 ; add column numbers
 (setq column-number-mode t)
 
