@@ -16,6 +16,12 @@
 (global-set-key "\C-\M-w" "\C-a\C-k\C-y")
 (global-set-key "\C-x\C-k" "\C-xk")
 
+; add column numbers
+(setq column-number-mode t)
+
+; delete highlighted text on input
+(delete-selection-mode t)
+
 ; add pabbrev
 (require 'pabbrev "~/.emacs.d/pabbrev.el")
 (global-pabbrev-mode)
