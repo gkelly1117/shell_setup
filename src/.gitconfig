@@ -5,7 +5,7 @@
 	cm = commit
 	ca = commit -am
 	co = checkout
-	br = break
+	br = branch
 	cp = cherry-pick
 	di = diff
 	st = status

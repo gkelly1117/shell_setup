@@ -1,6 +1,8 @@
 alias g="git"
 alias e="emacs -nw"
 alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 alias ~="cd ~"
 alias la="ls -A"
 alias c="clear"
