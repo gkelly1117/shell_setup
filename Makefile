@@ -1,10 +1,11 @@
 upload:
-	cp ~/.emacs src/
-	cp ~/.bashrc src/
-	cp ~/.gitconfig src/
-	cp ~/.inputrc src/
-	cp ~/.profile src/
-	cp ~/.emacs.d/pabbrev.el src/.emacs.d/
+	-cp ~/.emacs src/
+	-cp ~/.bashrc src/
+	-cp ~/.gitconfig src/
+	-cp ~/.inputrc src/
+	-cp ~/.profile src/
+	-cp ~/.emacs.d/pabbrev.el src/.emacs.d/
+	-cp ~/.emacs.d/js2.elc src/.emacs.d/
 
 install:
 	make backup
@@ -15,6 +16,7 @@ install:
 	cp src/.profile ~/
 	mkdir -p ~/.emacs.d
 	cp src/.emacs.d/pabbrev.el ~/.emacs.d/
+	cp src/.emacs.d/js2.elc ~/.emacs.d/
 
 backup:
 	mkdir -p ~/.shell_setup_backup
@@ -25,3 +27,4 @@ backup:
 	-cp ~/.profile ~/.shell_setup_backup/
 	mkdir -p ~/.shell_setup_backup/.emacs.d
 	-cp ~/.emacs.d/pabbrev.el ~/.shell_setup_backup/.emacs.d/
+	-cp ~/.emacs.d/js2.elc ~/.shell_setup_backup/.emacs.d/
