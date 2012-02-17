@@ -4,6 +4,7 @@ upload:
 	-cp ~/.gitconfig src/
 	-cp ~/.inputrc src/
 	-cp ~/.profile src/
+        -cp ~/.bashrc.d/commands.sh src/.bashrc.d/
 	-cp ~/.emacs.d/pabbrev.el src/.emacs.d/
 	-cp ~/.emacs.d/js2.elc src/.emacs.d/
 
@@ -17,6 +18,8 @@ install:
 	mkdir -p ~/.emacs.d
 	cp src/.emacs.d/pabbrev.el ~/.emacs.d/
 	cp src/.emacs.d/js2.elc ~/.emacs.d/
+	mkdir -p ~/.bashrc.d
+	cp src/.bashrc.d/commands.sh ~/.bashrc.d/
 
 backup:
 	mkdir -p ~/.shell_setup_backup
@@ -28,3 +31,5 @@ backup:
 	mkdir -p ~/.shell_setup_backup/.emacs.d
 	-cp ~/.emacs.d/pabbrev.el ~/.shell_setup_backup/.emacs.d/
 	-cp ~/.emacs.d/js2.elc ~/.shell_setup_backup/.emacs.d/
+	mkdir -p ~/.shell_setup_backup/.bashrc.d
+	-cp ~/.bashrc.d/commands.sh ~/.shell_setup_backup/.bashrc.d/

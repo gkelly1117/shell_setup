@@ -21,23 +21,28 @@
   (kill-line 0))
 (global-set-key "\M-k" 'backward-kill-line)
 
-; highlight lines over 80 chars (doesn't actually work!)
+; highlight lines over 80 chars
 (require 'whitespace)
 (setq whitespace-line-column 80
       whitespace-style '(face tabs trailing lines-tail))
 (add-hook 'js2-mode-hook 'whitespace-mode)
 
 ; use spaces instead of tabs
-;(setq-default indent-tabs-mode nil)
-;(setq standard-indent 2)
+(setq-default indent-tabs-mode nil)
+(setq standard-indent 2)
 
 ; syntax highlighting hooks
 (setq auto-mode-alist (cons '("README" . text-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.sqc$" . c-mode) auto-mode-alist))
 
-; load js2-mode
+; load js2-mode - for mac
 (require 'js2-mode "~/.emacs.d/js2.elc")
 (setq auto-mode-alist (cons '("\\.js$" . js2-mode) auto-mode-alist))
+
+;; load js2-mode - for linux
+;(setq load-path (append (list (expand-file-name "~/.emacs.d")) load-path))
+;(autoload 'js2-mode "js2" nil t)
+;(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 ; add column numbers
 (setq column-number-mode t)
@@ -111,6 +116,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(gud-gdb-command-name "gdb --annotate=1")
+ '(inhibit-startup-screen t)
  '(js2-auto-indent-p t)
  '(js2-basic-offset 2)
  '(js2-bounce-indent-p nil)
@@ -118,9 +124,12 @@
  '(js2-enter-indents-newline t)
  '(js2-indent-on-enter-key nil)
  '(js2-mirror-mode t)
-; '(large-file-warning-threshold nil)
- '(show-trailing-whitespace t)
-; '(whitespace-check-indent-whitespace nil)
-; '(whitespace-check-leading-whitespace nil)
-; '(whitespace-check-spacetab-whitespace nil)
-)
+ '(show-trailing-whitespace t))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )
+
+(put 'upcase-region 'disabled nil)

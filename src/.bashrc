@@ -25,3 +25,5 @@ function cd() {
     builtin cd "$1"
     la
 }
+
+. ~/.bashrc.d/commands.sh

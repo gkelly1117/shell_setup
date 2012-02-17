@@ -11,3 +11,5 @@
 	st = status
 	ft = fetch
 	pl = pull
+	rb = rebase
+	tree = log --oneline --decorate --graph
