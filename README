@@ -11,4 +11,6 @@ Usage:
 Emacs setup includes:
 
 - pabbrev auto-completion
-- shortcuts for refreshing a file, opening a shell within emacs, deleting a line and many more
+- js2-mode for javascript editing
+- additional functionality such as kill line, kill white space on save, and refresh
+- keyboard shortcuts and useful aliases
