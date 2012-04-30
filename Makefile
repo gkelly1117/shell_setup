@@ -4,7 +4,7 @@ upload:
 	cp ~/.gitconfig src/
 	cp ~/.inputrc src/
 	cp ~/.profile src/
-	cp -r ~/.emacs.d/ src/.emacs.d/
+	cp ~/.emacs.d/pabbrev.el src/.emacs.d/
 
 install:
 	make backup
@@ -14,7 +14,7 @@ install:
 	cp src/.inputrc ~/
 	cp src/.profile ~/
 	mkdir -p ~/.emacs.d
-	cp -r src/.emacs.d ~/.emacs.d/
+	cp src/.emacs.d/pabbrev.el ~/.emacs.d/
 
 backup:
 	mkdir -p ~/.shell_setup_backup
@@ -24,4 +24,4 @@ backup:
 	cp ~/.inputrc ~/.shell_setup_backup/
 	cp ~/.profile ~/.shell_setup_backup/
 	mkdir -p ~/.shell_setup_backup/.emacs.d
-	cp -r ~/.emacs.d/ ~/.shell_setup_backup/.emacs.d/
+	cp ~/.emacs.d/pabbrev.el ~/.shell_setup_backup/.emacs.d/
