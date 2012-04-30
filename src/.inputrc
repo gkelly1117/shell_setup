@@ -1,3 +1,4 @@
 # show completion list on first tab
 set show-all-if-ambiguous on
-set completion-ignore-case on
+#set completion-ignore-case on
+
