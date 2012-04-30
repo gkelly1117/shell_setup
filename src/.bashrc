@@ -1,6 +1,11 @@
+# bash completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+
 # git auto complete
-. ~/.bashrc.d/git-completion.sh
-complete -o default -o nospace -F _git g
+#. ~/.bashrc.d/git-completion.sh
+#complete -o default -o nospace -F _git g
 
 # PS1
 case $TERM in
@@ -8,14 +13,14 @@ case $TERM in
     export PS1='\W\$ '
     ;;
   *)
-    export PS1='\[\033[01;32m\]\[\033[01;34m\]\w\[\033[31m\]$(__git_ps1 "(%s)") \[\033[01;34m\]\[\033[00m\]'
+    export PS1='\[\033[01;32m\]\w\[\033[31m\]$(__git_ps1 "(%s)") \[\033[01;34m\]\[\033[00m\]'
     ;;
 esac
 
 # cd + ls
 function cl() {
     builtin cd "$1"
-    la
+    ls -A
 }
 
 # diff deleted (assuming first file is original)
