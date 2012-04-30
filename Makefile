@@ -5,6 +5,7 @@ upload:
 	cp ~/.inputrc src/
 	cp ~/.profile src/
 	cp -r ~/.emacs.d/ src/.emacs.d/
+	cp -r ~/.bashrc.d/ src/.bashrc.d/
 
 install:
 	make backup
