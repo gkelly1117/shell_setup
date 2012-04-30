@@ -4,7 +4,7 @@ upload:
 	-cp ~/.gitconfig src/
 	-cp ~/.inputrc src/
 	-cp ~/.profile src/
-        -cp ~/.bashrc.d/commands.sh src/.bashrc.d/
+	-cp ~/.bashrc.d/commands.sh src/.bashrc.d/
 	-cp ~/.emacs.d/pabbrev.el src/.emacs.d/
 	-cp ~/.emacs.d/js2.elc src/.emacs.d/
 
