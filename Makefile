@@ -16,7 +16,7 @@ install:
 	cp src/.inputrc ~/
 	cp src/.profile ~/
 	mkdir -p ~/.emacs.d
-	cp -r src/.emacs.d ~/.emacs.d/
+	cp -r src/.emacs.d/ ~/.emacs.d/
 	mkdir -p ~/.bashrc.d
 	cp -r src/.bashrc.d/ ~/.bashrc.d/
 
