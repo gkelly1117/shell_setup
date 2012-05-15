@@ -3,6 +3,9 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
+complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
+    || complete -o default -o nospace -F _git g
+
 # git auto complete
 #. ~/.bashrc.d/git-completion.sh
 #complete -o default -o nospace -F _git g
