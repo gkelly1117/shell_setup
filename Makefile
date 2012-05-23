@@ -10,15 +10,7 @@ upload:
 
 install:
 	make backup
-	cp src/.emacs ~/
-	cp src/.bashrc ~/
-	cp src/.gitconfig ~/
-	cp src/.inputrc ~/
-	cp src/.profile ~/
-	mkdir -p ~/.emacs.d
-	cp -r src/.emacs.d/ ~/.emacs.d/
-	mkdir -p ~/.bashrc.d
-	cp -r src/.bashrc.d/ ~/.bashrc.d/
+	cp -r src/* ~/
 
 backup:
 	mkdir -p ~/.shell_setup_backup
@@ -27,7 +19,5 @@ backup:
 	-cp ~/.gitconfig ~/.shell_setup_backup/
 	-cp ~/.inputrc ~/.shell_setup_backup/
 	-cp ~/.profile ~/.shell_setup_backup/
-	mkdir -p ~/.shell_setup_backup/.emacs.d
-	-cp -r ~/.emacs.d/ ~/.shell_setup_backup/.emacs.d/
-	mkdir -p ~/.shell_setup_backup/.bashrc.d
-	-cp -r ~/.bashrc.d/ ~/.shell_setup_backup/.bashrc.d/
+	-cp -r ~/.emacs.d/ ~/.shell_setup_backup/
+	-cp -r ~/.bashrc.d/ ~/.shell_setup_backup/
